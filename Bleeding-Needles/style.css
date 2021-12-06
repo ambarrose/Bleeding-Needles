@@ -1,0 +1,987 @@
+/*
+
+Theme Name: Ambar's Theme
+
+Theme URI: http://yourwebsite.com/theme
+
+Author: Tim
+
+Author URI: http://yourwebsite.com/
+
+Description: This is my first custom theme!
+
+Version: 1.0.0
+
+License: GNU General Public License v2 or later
+
+Tags: minimal, cool
+
+*/
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css');
+
+.welcome-text {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 70px;
+  color: #2D0033;
+  padding-top: 40px;
+}
+
+.beige-heading{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: #F1D3B1;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-shadow: 4px 3px 10px rgb(69, 53, 75);
+}
+
+.banner-text {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-shadow: 5px 5px 10px black;
+}
+
+h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 26px;
+  color: #2D0033;
+}
+
+.hours {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: #F1D3B1;
+}
+
+.contact-us{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 26px;
+  color: #F1D3B1;
+}
+
+h5 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: #2D0033;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  text-shadow: 4px 3px 10px rgb(69, 53, 75);
+}
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: white;
+  width: 700px;
+  margin: auto;
+}
+
+li {
+  display: inline;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 26px;
+  color: #2D0033;
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #2D0033;
+}
+
+input, .inspo {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #2D0033;
+  border: 0px!important;
+}
+
+a {
+  color: #F1D3B1!important;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.fa-bolt {
+  color: #F1D3B1;
+}
+
+i {
+  color: #2D0033;
+}
+/* text/icons ENDS */
+
+/* desktop nav section starts */
+#beige-nav {
+  width: 100%;
+  margin: auto;
+  height: 120px;
+}
+
+#logo {
+  margin-left: 20px;
+  width:150px;
+}
+
+/* nav buttons */
+#nav-items {
+  align-items: center;
+  justify-content:flex-end;
+  position: absolute;
+  margin: auto;
+}
+
+.nav-link:hover {
+  color: #2D0033!important;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+/* desktop nav section ENDS */
+
+/* mobile nav section starts */
+
+.gallery-link {
+  background-color: #F1D3B1;
+  height: 40px;
+  width: 170px;
+}
+
+.booking-link {
+  background-color: #F1D3B1;
+  height: 40px;
+  width: 170px;
+  box-shadow: 4px 3px 10px rgb(69, 53, 75);
+}
+
+#card-link{
+  background-color: #F1D3B1;
+  height: 40px;
+  width: 170px;
+  margin-left: 150px;
+}
+ /* universal buttons end */
+
+ /* home page section starts */
+.home-img {
+  margin:auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 745px;
+  width: 100%;
+  background-image: url(images/dylan-sauerwein-j4n6xTkVjyY-unsplash.jpg);
+}
+
+.welcome-box {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+  background: rgba( 255, 255, 255, 0.80 ) ;
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 1px );
+  border: 1px solid rgba( 255, 255, 255, 0.11 );
+  box-sizing: border-box;
+}
+
+.home-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #2D0033;
+}
+
+/* services section */
+.services {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color:#F1D3B1;
+  height: 400px;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin-top: 40px;
+}
+
+#service-item {
+  width: 100%!important;
+  padding-left: 200px!important;
+}
+
+.items {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #F1D3B1;
+}
+
+/* services section ENDS */
+
+/* banner section starts */
+.banner-img {
+  margin: auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 20px;
+  height: 300px;
+  width: 100%;
+  background-image: url("images/hung-pham-DWHzxQd_uOY-unsplash 1.png");
+}
+/* banner section ENDS */
+
+/* our work carousel plugin starts */
+.our-work {
+  text-align: center;
+  position: relative;
+  height: 900px;
+  width: 100%;
+}
+ /* our work carousel plugin ENDS */
+
+ /* news posts section starts */
+#news{
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+  height: 900px;
+  padding-bottom: 40px;
+}
+
+.news-post {
+  margin: auto;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  width: 600px;
+}
+
+.col-10 {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid #2D0033;
+  background-color:  #F1D3B1;
+  height: auto;
+}
+
+.card-body {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image-top{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* news posts section ends */
+
+/* about us page starts */
+
+.about-img{
+  margin:auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 745px;
+  width: 100%;
+}
+
+.team {
+  position: relative;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+
+.tattooist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-text{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #2D0033;
+  width: 700px;
+  margin: auto;
+}
+
+.col {
+  display: inline-block;
+  height:270px;
+  margin-bottom: 40px;
+}
+
+.col-5 {
+  background-color:#F1D3B1;
+  border: 2px solid white;
+  align-items: center;
+}
+
+.tattoo {
+  height: 270px;
+  width: 310px;
+}
+
+/* about us page ENDS */
+
+/* contact page starts */
+
+.contact-img {
+  margin:auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 745px;
+  width: 100%;
+}
+
+.contact-box {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba( 255, 255, 255, 0.80 ) ;
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 1px );
+  border: 1px solid rgba( 255, 255, 255, 0.11 );
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  border: 2px solid #2D0033!important;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.radio-754 {
+  margin: auto;
+  display: inline-block;
+}
+
+.wpcf7-list-item-label {
+  margin-right: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #2D0033;
+}
+
+textarea {
+ resize: none;
+ height: 30px;
+}
+
+.Uploadreferenceimage {
+  margin-left: 385px;
+}
+
+.wpcf7-submit {
+  margin: auto;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 26px;
+  color: #2D0033;
+  margin-top: 10px;
+  margin-left: 60px;
+  background-color: #F1D3B1;
+  height: 40px;
+  width: 170px;
+  box-shadow: 4px 3px 5px rgb(69, 53, 75);
+}
+
+/* form ENDS */
+
+/* map area starts */
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: #F1D3B1;
+  height: 460px;
+  width: 100%;
+}
+
+.fa-map-marker,
+.fa-clock-o,
+.fa-phone,
+.fa-bolt {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #F1D3B1;
+}
+
+.details {
+  width: 470px;
+  height:360px;
+  margin-left: 140px;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+
+.map  {
+  margin-top: 60px;
+  height: 360px;
+  width: 600px;
+}
+
+/* map area refundS */
+
+.r-policy {
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+}
+
+.policy {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  width:800px;
+  text-align: center;
+  margin: auto;
+  color: #F1D3B1;
+}
+
+/* contact us page ENDS */
+
+/* Gallery page starts */
+.gallery {
+  border-top: 2px solid #F1D3B1;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoblocks-gallery {
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+#testimonial {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 670px;
+  padding-bottom: 40px;
+}
+
+.news-post {
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 40px;
+  width: 600px;
+}
+
+.news-card {
+  margin-right: 20px;
+}
+
+.gallery-news-post {
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 40px;
+  width: 600px;
+}
+
+.row {
+  justify-content: center;
+  width: 70%;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+/* gallery page ENDS */
+
+/* footer starts */
+#footer {
+  background-color: #2D0033;
+  padding-top: 30px;
+  height:100px;
+}
+
+#f-nav-section {
+  width:100%!important;
+}
+
+.border-top{
+  border-top: 0px!important;
+}
+
+.col-4 {
+  margin-left: 320px;
+  color: #F1D3B1;
+}
+
+.col-8 {
+  display: flex;
+}
+
+#f-about-link{
+  color: #F1D3B1!important;
+  height:50px;
+  width:140px;
+  margin-left: 50px;
+}
+
+#f-gallery-link{
+  color: #F1D3B1!important;
+  height:50px;
+  width:140px;
+}
+
+#f-contact-link{
+  color: #F1D3B1!important;
+  height:50px;
+  width:140px;
+}
+
+@media screen and (max-width:400px){
+
+/* universal nav section starts */
+  #beige-nav ,
+  #nav-items,
+  #logo {
+    display: none;
+  }
+
+  #mob-beige-nav {
+    width: 100%;
+    margin: auto;
+    height: 120px;
+  }
+
+  #mob-nav-items {
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-menu {
+    text-align: center;
+    width: 340px;
+    height: 200px;
+    border: 2px solid #F1D3B1;
+  }
+
+  #mob-logo {
+    display: inline-block;
+    margin: auto;
+    width:150px;
+    margin-left: 150px;
+  }
+
+  .dropdown {
+    margin: 0px!important;
+  }
+  /* universal nav section ENDS */
+
+  /* universal footer starts */
+  #footer {
+    display: none;
+  }
+
+  #mob-footer {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #2D0033;
+    height: 190px;
+  }
+
+  #mob-f-nav-section {
+    text-align: center;
+    padding-top: 20px;
+    width:100%!important;
+  }
+
+  small {
+    text-align: center;
+  }
+  /* universal footer ENDS */
+
+  /* mob icons and fonts starts */
+  .mob-beige-heading {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color: #F1D3B1;
+    padding-top: 20px;
+    margin: none!important;
+    text-align: center;
+    text-shadow: 4px 3px 10px rgb(69, 53, 75);
+  }
+
+  .fa-bars {
+    font-size: 30px;
+    color: #F1D3B1!important;
+  }
+
+  .fa-bars:hover {
+    font-size: 30px;
+    color: #2D0033!important;
+  }
+
+  .mob-welcome-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    color: #2D0033;
+    padding: 10px;
+  }
+
+  .welcome-text {
+    display: none;
+  }
+
+  .mob-banner-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 10px black;
+  }
+  /* mob icons and fonts ENDS */
+
+  /* home page section starts */
+  .home-img {
+    display: none;
+  }
+
+  .welcome-box{
+    display: none;
+  }
+
+  #mob-home {
+    background-color: #F1D3B1!important;
+    padding: 10px;
+  }
+
+  #mob-banner-img {
+    position: relative;
+    margin: auto;
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 100%;
+    background-image: url("images/hung-pham-SMALLunsplash.png");
+  }
+
+  .services {
+    display: none;
+  }
+
+  #mob-services {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 540px;
+    width: 100%;
+  }
+
+  #mob-container {
+    width: 100%;
+    margin: none!important;
+  }
+
+  #service-item {
+    display: none;
+  }
+
+  #mob-service-item {
+    margin-left: 30px;
+  }
+
+  .banner-img {
+    margin: auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 20px;
+    height: 260px;
+    width: 100%;
+    background-image: url("images/dylan-sauerweinSMALLunsplash.jpg");
+  }
+
+  .banner-text {
+    display: none;
+  }
+
+  .booking-link {
+    display: none;
+  }
+
+  .mob-booking-link,
+  .mob-gallery-link {
+    background-color: #F1D3B1;
+    height: 40px;
+    width: 170px;
+    margin-top: 15px;
+    box-shadow: 4px 3px 10px rgb(69, 53, 75);
+  }
+
+  .our-work {
+    display: none;
+  }
+
+  .mob-our-work {
+    text-align: center;
+    position: relative;
+    height: 340px;
+    width: 100%;
+  }
+
+  #news {
+    display: none;
+  }
+
+  #mob-news {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .news-post {
+    display: none;
+  }
+
+  .mob-news-post {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* mob home section ENDS */
+
+  #mob-testimonial {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1300px;
+    padding-bottom: 40px;
+  }
+
+  .mob-testimonial-post {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  #testimonial {
+    display: none
+  }
+
+  /* mob about section starts */
+  .about-img {
+    display: none;
+  }
+
+  .mob-welcome-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    background-image: url(images/clem-onojeghuo-SMALL-unsplash.jpg);
+  }
+
+  .mob-about-box {
+    background-color: #F1D3B1;
+    height: 310px;
+  }
+
+  .team,
+  .tattooist,
+  .about-text {
+    display: none;
+  }
+
+  .mob-team {
+    position: relative;
+    align-items: center;
+    margin: auto;
+  }
+
+  .mob-tattooist {
+    background-color: #F1D3B1;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+
+  .mob-tattoo {
+    position: relative;
+  }
+
+  .mob-about-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #2D0033;
+    width: 100%;
+    margin: auto;
+  }
+
+  .contact-img,
+  .contact-box {
+    display: none;
+  }
+
+  .mob-contact-img {
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    background-image: url(images/MOBallef-vinicius-hxNiXP498UI-unsplash.jpg);
+  }
+
+  .mob-contact-box {
+    width: 100%;
+    height: 450px;
+    margin: auto;
+
+  }
+
+  /* #wpcf7-f33-o2 {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  } */
+
+  .wpcf7-form {
+    background-color: #F1D3B1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    height:370px;
+  }
+
+  .contact,
+  .details,
+  .map {
+    display: none;
+  }
+
+  .mob-contact {
+    justify-content: center;
+    background-color: #F1D3B1;
+    height: 700px;
+    width: 100%;
+  }
+
+  .mob-details {
+    width: 100%;
+    height:360px;
+  }
+
+  .mob-map  {
+    height: 360px;
+    width: 400px;
+  }
+
+  .r-policy,
+  .policy {
+    display: none;
+  }
+
+  .mob-r-policy {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+  }
+
+  .mob-policy {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    width:400px;
+    text-align: center;
+    margin: auto;
+    color: #F1D3B1;
+  }
+
+
+}
+
+@media screen and (min-width:401px){
+  #mob-nav-items,
+  #mob-footer,
+  #mob-home,
+  .mob-welcome-text,
+  #mob-services,
+  .mob-beige-heading,
+  #mob-container,
+  #mob-service-item,
+  .mob-banner-text,
+  .mob-booking-link,
+  .mob-gallery-link,
+  .mob-our-work,
+  #mob-news,
+  .mob-news-post,
+  .mob-team ,
+  .mob-tattooist,
+  .mob-tattoo,
+  .mob-about-text,
+  .mob-contact-img,
+  .mob-contact-box,
+  .mob-contact,
+  .mob-details,
+  .mob-map,
+  .mob-r-policy,
+  .mob-policy,
+  #mob-testimonial,
+  .mob-testimonial-post {
+    display: none;
+  }
+
+}
